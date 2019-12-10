@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $darkblue;
 }
 
 code {
@@ -15,6 +16,5 @@ code {
     monospace;
 }
 
-.App {
-  background-color: $darkblue;
-}
+/* .App {
+} */
