@@ -1,6 +1,12 @@
 import React from 'react';
 
+import goatShape from '../../helpers/propz/goatShape';
+
 class Goat extends React.Component {
+  static propTypes = {
+    goat: goatShape.goatShape,
+  }
+
   render() {
     const { goat } = this.props;
     return (
@@ -12,7 +18,7 @@ class Goat extends React.Component {
           <p className="card-text">{goat.description}</p>
         </div>
       </div>
-    )
+    );
   }
 }
 
