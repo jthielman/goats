@@ -4,6 +4,7 @@ import './App.scss';
 import goatData from '../helpers/data/goatData';
 
 import GoatCorral from '../components/GoatCorral/GoatCorral';
+import AvailableGoats from '../components/AvailableGoats/AvailableGoats';
 
 class App extends React.Component {
   state = {
@@ -30,7 +31,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <button className='btn btn-warning'>GOATS</button>
+          <h1>GOATS!</h1>
+          <div><AvailableGoats gotes={this.state.goats} /></div>
           <GoatCorral butts={this.state.goats} freeGoat={this.freeGoat} useGoat={this.useGoat}/>
       </div>
     );
